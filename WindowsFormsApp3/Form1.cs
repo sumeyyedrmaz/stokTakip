@@ -38,5 +38,10 @@ namespace WindowsFormsApp3
             frmMüşteriListele liste= new frmMüşteriListele();
             liste.ShowDialog();
         }
+
+        private void btnÜrünEkle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

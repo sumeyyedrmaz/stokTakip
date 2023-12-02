@@ -50,7 +50,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-45, 52);
+            this.dataGridView1.Location = new System.Drawing.Point(-20, 49);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -62,7 +62,7 @@
             // 
             this.btnGüncelle.Location = new System.Drawing.Point(396, 284);
             this.btnGüncelle.Name = "btnGüncelle";
-            this.btnGüncelle.Size = new System.Drawing.Size(75, 23);
+            this.btnGüncelle.Size = new System.Drawing.Size(83, 23);
             this.btnGüncelle.TabIndex = 21;
             this.btnGüncelle.Text = "Güncelle";
             this.btnGüncelle.UseVisualStyleBackColor = true;
@@ -175,6 +175,7 @@
             this.txtTcAra.Name = "txtTcAra";
             this.txtTcAra.Size = new System.Drawing.Size(100, 22);
             this.txtTcAra.TabIndex = 24;
+            this.txtTcAra.TextChanged += new System.EventHandler(this.txtTcAra_TextChanged);
             // 
             // frmMüşteriListele
             // 

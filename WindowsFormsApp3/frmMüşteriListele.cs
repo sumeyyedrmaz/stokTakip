@@ -83,5 +83,13 @@ namespace WindowsFormsApp3
             dataGridView1.DataSource = ds.Tables["müşteri"];
             baglanti.Close();
         }
+
+        private void txtTcAra_TextChanged(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select *from müşteri where tc like "+ txtTcAra.Text);
+
+        }
     }
 }
+

@@ -313,6 +313,7 @@
             this.btnÜrünEkle.TabIndex = 3;
             this.btnÜrünEkle.Text = "Ürün Ekle";
             this.btnÜrünEkle.UseVisualStyleBackColor = true;
+            this.btnÜrünEkle.Click += new System.EventHandler(this.btnÜrünEkle_Click);
             // 
             // btnSatışListele
             // 
@@ -356,7 +357,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(1160, 506);
             this.Controls.Add(this.frmSatis);
             this.Controls.Add(this.label10);
