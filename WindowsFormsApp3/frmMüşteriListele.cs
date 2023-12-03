@@ -48,7 +48,7 @@ namespace WindowsFormsApp3
         private void btnGüncelle_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("update müşteri tablosu set adsoyad =@adsoyad, telefon=@telefon,adres=@adres,email=@email where tc=@tc", baglanti);
+            SqlCommand komut = new SqlCommand("update müşteri set adsoyad =@adsoyad, telefon=@telefon,adres=@adres,email=@email where tc=@tc", baglanti);
             komut.Parameters.AddWithValue("@tc", txtTc.Text);
             komut.Parameters.AddWithValue("@adsoyad", txtAdSoyad.Text);
             komut.Parameters.AddWithValue("@adres", txtAdres.Text);
@@ -69,8 +69,8 @@ namespace WindowsFormsApp3
         private void btnSil_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("delete from müşteri where tc='" + dataGridView1.CurrentRow.Cells["tc"].Value.ToString() + ' ');
-            komut.ExecuteNonQuery();
+            SqlCommand komut = new SqlCommand("delete from müşteri where tc=@tc", baglanti);
+            komut.Parameters.AddWithValue("@tc", dataGridView1.CurrentRow.Cells["tc"].Value.ToString()); komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kayıt Silindi");
         }
@@ -86,9 +86,12 @@ namespace WindowsFormsApp3
 
         private void txtTcAra_TextChanged(object sender, EventArgs e)
         {
+            DataTable tablo= new DataTable();
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("select *from müşteri where tc like "+ txtTcAra.Text);
-
+            SqlDataAdapter ada =new SqlDataAdapter ("select *from müşteri where tc like  '%"+ txtTcAra.Text+ "%'" , baglanti);
+            ada.Fill(tablo);
+            dataGridView1.DataSource= tablo;
+            baglanti.Close();
         }
     }
 }

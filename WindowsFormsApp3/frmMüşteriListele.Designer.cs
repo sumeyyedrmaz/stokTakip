@@ -48,18 +48,19 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-20, 49);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 49);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(398, 296);
+            this.dataGridView1.Size = new System.Drawing.Size(341, 296);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // btnGüncelle
             // 
+            this.btnGüncelle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGüncelle.Location = new System.Drawing.Point(396, 284);
             this.btnGüncelle.Name = "btnGüncelle";
             this.btnGüncelle.Size = new System.Drawing.Size(83, 23);
@@ -107,6 +108,7 @@
             // lblTelefon
             // 
             this.lblTelefon.AutoSize = true;
+            this.lblTelefon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblTelefon.Location = new System.Drawing.Point(535, 138);
             this.lblTelefon.Name = "lblTelefon";
             this.lblTelefon.Size = new System.Drawing.Size(53, 16);
@@ -116,6 +118,7 @@
             // lblAdres
             // 
             this.lblAdres.AutoSize = true;
+            this.lblAdres.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblAdres.Location = new System.Drawing.Point(535, 178);
             this.lblAdres.Name = "lblAdres";
             this.lblAdres.Size = new System.Drawing.Size(43, 16);
@@ -125,6 +128,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblEmail.Location = new System.Drawing.Point(535, 218);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(45, 16);
@@ -134,6 +138,7 @@
             // lblAdSoyad
             // 
             this.lblAdSoyad.AutoSize = true;
+            this.lblAdSoyad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblAdSoyad.Location = new System.Drawing.Point(535, 98);
             this.lblAdSoyad.Name = "lblAdSoyad";
             this.lblAdSoyad.Size = new System.Drawing.Size(67, 16);
@@ -143,6 +148,7 @@
             // lbltc
             // 
             this.lbltc.AutoSize = true;
+            this.lbltc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbltc.Location = new System.Drawing.Point(535, 58);
             this.lbltc.Name = "lbltc";
             this.lbltc.Size = new System.Drawing.Size(25, 16);
@@ -151,6 +157,7 @@
             // 
             // btnSil
             // 
+            this.btnSil.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSil.Location = new System.Drawing.Point(485, 284);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(75, 23);
@@ -162,6 +169,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(396, 329);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 16);
@@ -198,6 +206,7 @@
             this.Controls.Add(this.lblAdSoyad);
             this.Controls.Add(this.lbltc);
             this.Controls.Add(this.dataGridView1);
+            this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Name = "frmMüşteriListele";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri Listeleme Ekranı";

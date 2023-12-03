@@ -41,6 +41,40 @@ namespace WindowsFormsApp3
 
         private void btnÜrünEkle_Click(object sender, EventArgs e)
         {
+            frmUrunEkle ekle = new frmUrunEkle();
+            ekle.ShowDialog();
+        }
+
+        private void frmSatis_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmMarka marka = new frmMarka();
+            marka.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmKategori kategori = new frmKategori();
+            kategori.ShowDialog();
+        }
+
+        private void btnÜrünListele_Click(object sender, EventArgs e)
+        {
+            frmÜrünListele listele = new frmÜrünListele();
+            listele.ShowDialog();
+        }
+
+        private void txtStokKodu_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
